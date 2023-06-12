@@ -1,9 +1,23 @@
-#root, body, html {
+#root {
   width: 100vw;
   height: 100vh;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
-  padding: 0;
+}
+
+body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* TRACK */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.23);
+}
+
+/* HANDLE */
+::-webkit-scrollbar-thumb {
+  background: white;
+  height: 10%;
+}

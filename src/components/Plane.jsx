@@ -15,8 +15,15 @@ export function Plane(props) {
   })
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.PUSHILIN_Plane_Circle000.geometry} material={materials.plane} />
-      <mesh ref={helix} geometry={nodes.PUSHILIN_Plane_Helix.geometry} material={materials.plane} position={[1.09, 0.23, 0]} />
+      <mesh geometry={nodes.PUSHILIN_Plane_Circle000.geometry} material={materials.plane} >
+
+        <meshStandardMaterial color={"#fff"}/>
+      </mesh>
+      <mesh ref={helix} geometry={nodes.PUSHILIN_Plane_Helix.geometry} material={materials.plane} position={[1.09, 0.23, 0]} >
+
+      <meshStandardMaterial color={"#fff"}/>
+
+      </mesh>
     </group>
   )
 }
